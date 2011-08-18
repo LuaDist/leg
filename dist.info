@@ -1,0 +1,16 @@
+--- This file is part of LuaDist project
+-- status: stable
+
+name = 'leg'
+version = '0.2'
+
+desc = "Leg offers a complete Lua 5.1 grammar, along with a small API for user manipulation."
+author = "Humberto Anjo"
+license = "MIT"
+url = "http://leg.luaforge.net/"
+maintainer = "Peter Kapec"
+
+depends = {
+	"lpeg = 0.7",
+	"lua ~> 5.1",
+}
