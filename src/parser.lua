@@ -177,10 +177,11 @@ local function rfind(s, pattern, init, finish)
 end
 
 -- Counts the number of lines (separated by *'\n'*) in `subject`.
+-- Viliam Kubis (01.03.2011) - replaced use of obsolete and deprecated lpeg.Ca with new lpeg.Cf
 local function lines (subject)
-	local inc = function (l) return l + 1 end
-	local L = m.Ca( m.Cc(1) * (m.P'\n'/inc + m.P(1)) ^0 )
-
+	local inc = function (acc,arg) return acc + 1 end
+	local L = m.Cf( m.Cc(1) * (m.P'\n' + m.P(1)) ^0, inc )
+  
 	return L:match(subject)
 end
 
