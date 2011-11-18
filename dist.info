@@ -2,13 +2,13 @@
 -- status: stable
 
 name = 'leg'
-version = '0.1.2'
+version = '0.1.3'
 
 desc = "Leg offers a complete Lua 5.1 grammar, along with a small API for user manipulation."
 author = "Humberto Anjo"
 license = "MIT"
 url = "http://leg.luaforge.net/"
-maintainer = "Peter Drahoš"
+maintainer = "Peter Kapec"
 
 depends = {
 	"lpeg >= 0.10",
