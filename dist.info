@@ -1,0 +1,39 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Humberto Anjo"
+depends = {
+[[lpeg = 0.7]],
+[[lua ~> 5.1]],
+}
+
+desc = "Leg offers a complete Lua 5.1 grammar, along with a small API for user manipulation."
+version = "0.2"
+maintainer = "Peter Kapec"
+files = {
+Unspecified = {
+[[lib/lua/leg.lua]],
+[[lib/lua/leg/grammar.lua]],
+[[lib/lua/leg/parser.lua]],
+[[share/leg/README]],
+[[share/leg/COPYRIGHT]],
+[[share/leg/release]],
+[[share/leg/doc//parser.html]],
+[[share/leg/doc//grammar.html]],
+[[share/leg/doc//lua.gif]],
+[[share/leg/doc//doc.css]],
+[[share/leg/doc//index.html]],
+[[share/leg/test//test.lua]],
+[[share/leg/test//test_parser.lua]],
+[[share/leg/example//metalua-ast.lua]],
+[[share/leg/example//vararg-indexing.lua]],
+[[share/leg/example//local-imports.lua]],
+[[share/leg/example//comment-extraction.lua]],
+[[share/leg/example//syntax-highlighting.lua]],
+[[share/leg/example//switch-macro.lua]],
+}
+,
+}
+
+license = "MIT"
+name = "leg"
+url = "http://leg.luaforge.net/"
