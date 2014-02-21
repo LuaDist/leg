@@ -11,6 +11,6 @@ url = "http://leg.luaforge.net/"
 maintainer = "Peter Kapec"
 
 depends = {
-	"lpeg >= 0.10",
+	"lpeg < 0.11",
 	"lua ~> 5.1",
 }
